@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1247</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTextEdit{
+font-size:30px;
+}
+QLabel#titleLabel{
+	font: 36pt &quot;楷体&quot;;
+}
+QLabel#pagenumLabel,#listLabel,#optlabel,#fifolabel,#lrulabel,#ranlabel{
+font: 15pt &quot;楷体&quot;;
+
+}
+
+QPushButton:hover,pressed{
+color:blue;
+}
+QPushButton{   
+	
+	font: 9pt &quot;黑体&quot;;
+}
+QTextEdit{
+background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(178, 178, 178, 44), stop:1 rgba(255, 255, 255, 255));
+}
+
+QDockWidget::restartBtn{background:darkgray;}
+
+QProgressBar{text-align:center;
+	
+	font: 15pt &quot;黑体&quot;;
+border-radius:5px;
+}</string>
+  </property>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>201</width>
+     <height>421</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="optlabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OPT</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>180</y>
+     <width>201</width>
+     <height>421</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fifolabel">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>150</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FIFO</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>60</y>
+     <width>381</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>180</y>
+     <width>201</width>
+     <height>421</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lrulabel">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>150</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LRU</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_5">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>180</y>
+     <width>201</width>
+     <height>421</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ranlabel">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>150</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CLOCK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="optStartBtn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fifoStartBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lruStartBtn">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ranStartBtn">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="toolBtn">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>600</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>菜单</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="listspinBox">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>180</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="pageVolumespinBox">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>240</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="listLabel">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>序列数：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pagenumLabel">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>240</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>页面数：</string>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>370</y>
+     <width>171</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QPushButton" name="parameterBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>缺页计算</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Log记录</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="quitBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>退出程序</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="optSuspendBtn">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fifoSuspendBtn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="optContinueBtn">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>690</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>继续</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fifoContinueBtn">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>690</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>继续</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lruSuspendBtn">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lruContinueBtn">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>690</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>继续</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ranSuspendBtn">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ranContinueBtn">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>690</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>继续</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="optProgressBar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>610</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="fifoProgressBar">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>610</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="lruProgressBar">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>610</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="ranProgressBar">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>610</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>40</y>
+     <width>711</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>模拟页面置换算法</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
